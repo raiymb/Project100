@@ -59,6 +59,11 @@ This project is a simple RESTful API for managing contacts. It includes function
 <h3>4.1. Contacts</h3>
 
     GET /api/contacts: Get a list of contacts (requires authentication).
+      Parameters:
+        search: Search for contacts containing the specified value in the name, email, or phone number.
+        page: Retrieve a specific page of contacts.
+        limit: Specify the number of contacts per page.
+        sort: Sort contacts based on name, newAdded (newest first), or lastAdded (oldest first).
 
     POST /api/contacts: Create a new contact (requires authentication).
     
@@ -67,6 +72,7 @@ This project is a simple RESTful API for managing contacts. It includes function
     PUT /api/contacts/:id: Update a specific contact (requires authentication).
     
     DELETE /api/contacts/:id: Delete a specific contact (requires authentication).
+    
     
 <h3>4.2. Users</h3>
 
