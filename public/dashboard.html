@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="dashboard-container">
+    <h2>Dashboard</h2>
+    <button id="logout" style="margin-bottom: 20px;">Logout</button>
+    <div id="formContainer">
+        <h3>Add/Edit Contact</h3>
+        <form id="createContactForm">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" placeholder="Phone" required>
+            </div>
+            <button type="submit">Save Contact</button>
+            <button type="button" onclick="resetForm()" style="margin-left: 10px;">Cancel</button>
+        </form>
+    </div>
+    <h3>Contacts</h3>
+    <div id="contactList"></div>
+    <!-- Pagination Controls -->
+    <div id="pagination" class="pagination"></div>
+</div>
+<script src="dashboard.js"></script>
+</body>
+</html>
